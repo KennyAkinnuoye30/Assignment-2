@@ -15,7 +15,7 @@ https://github.com/mdn/learning-area/tree/master/javascript/building-blocks/gall
 function mainImage(thumb) {
   var main_src = thumb.target.getAttribute('src');
   displayedImage.setAttribute('src', main_src);
-  };
+};
 
 for(var i = 1; i < 6; i++) {
   const newImage = document.createElement('img');
@@ -25,3 +25,20 @@ for(var i = 1; i < 6; i++) {
 };
 
 /* Wiring up the Darken/Lighten button */
+
+/*
+The basis of this function was taken from the MDN project Image
+gallery. Link:
+https://github.com/mdn/learning-area/tree/master/javascript/building-blocks/gallery
+*/
+
+function dark() {
+  const className = btn.getAttribute('class');
+  if(className == 'dark') {
+    btn.setAttribute('class','light');
+    btn.textContent = 'lighten';
+    overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
+  };
+};
+
+btn.onclick = dark
