@@ -1,22 +1,26 @@
 h1 {
-  font-family: helvetica, arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   text-align: center;
   display: flex;
   justify-content: center;
+  background-color: lightgrey;
 }
 
 h2 {
-  font-family: helvetica, arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   text-align: center;
   display: flex;
   justify-content: center;
+  background-color: lightgrey;
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-decoration-style: wavy;
 }
-
 
 body {
   width: 640px;
   margin: 0 auto;
-  background-color: #dd8f8f;
+  background-color: lightgrey;
 }
 
 .full-img {
@@ -24,6 +28,10 @@ body {
   display: block;
   width: 640px;
   height: 480px;
+  border-top: dotted white;
+  border-left: dotted white;
+  border-right: dotted white;
+  border-bottom: dotted white;
 }
 
 .overlay {
