@@ -1,0 +1,35 @@
+    
+    for (let i = 0; i < countries.length; i++) {
+        console.log(countries[i]); // log out by index
+        console.log(`${countries[i].name} ${countries[i].code}`);
+      }
+
+      // how to log out every country in an array
+      countries.forEach(m => {
+        console.log(m);
+      });
+
+
+      const range = n => {
+        let arr = [];
+        for (let i = 0; i < n; i++) {
+          arr[i] = i;
+        }
+        return arr;
+      };
+
+      let cList = range(25);
+
+      const mod_countries = cList.map(m => {
+        console.log(countries);
+        return `${m.code} ${m.name}`;
+      });
+
+      // alternative:
+      console.log(countries);
+
+      function clickFunction() {
+        
+      }
+
+      button.addEventListener("click", clickFunction());

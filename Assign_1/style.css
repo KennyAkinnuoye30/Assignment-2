@@ -1,0 +1,109 @@
+.header {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    background-color: #0c0c0c;
+    align-items: center;
+  }
+
+html, body {
+    margin: auto;
+    padding: 0;
+    background-color: #86D2E2;
+  }
+  
+
+  
+  /* || typography */
+
+  h1 {
+    font-family: 'Spicy Rice';
+    color: #FBD726;
+  }
+  
+  h2 {
+    margin: 0;
+    font-family: 'Bungee';
+    color: #0c0c0c;
+  }
+  h3 {
+    margin: 0;
+    font-style: italic;
+    font-family: 'Bungee';
+    color: #0c0c0c;
+  }
+
+    
+
+.header img {   
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: flex-end;
+    height: 150px;
+  }
+
+
+.Main {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+}
+
+.Genos{
+    margin-right: 15px;   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.Genos p {
+    font-size: 16px;
+    padding: 5px;
+    background-color: #EBE6A4;
+    border-radius: 4px;
+}
+
+.G2 {
+    height: 400px;
+    border-radius: 4px;
+
+}
+.stuff {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+}
+
+.Content {
+    margin-right: 200px;
+    margin-bottom: 200px;
+    font-size: 14px;
+    padding: 10px;
+    background-color: #EBE6A4;
+    border-radius: 4px;
+    border-style: dashed;
+
+
+  }
+  @media screen and (max-width:800px) {
+    .stuff {
+        display: block;
+
+    }
+    .Genos {
+        width: 200px;   
+    }
+
+    .Content{
+        width: 350px;
+        display: block;
+    }
+
+}
+  
