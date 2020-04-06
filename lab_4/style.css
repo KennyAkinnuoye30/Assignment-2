@@ -21,14 +21,14 @@ body {
   }
   
   .container {
-    position: absolute;
     right: 0;
     left: 0;
+    align-items: center;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
     font-family: Helvetica, Geneva, Tahoma, sans-serif;
-  }
+}
   
   .wrapper {
     min-height: 100%;
@@ -44,7 +44,7 @@ body {
   
   }
   
-  .wrapper div {
+  .container div {
     border-radius: 14px;
   }
   
