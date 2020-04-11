@@ -23,7 +23,7 @@
       </div>
     </div>
     <script>
-        var mymap = L.map('map').setView([51.505, -0.09], 13);
+        let mymap = L.map('map').setView([51.505, -0.09], 13);
 
         L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -34,9 +34,9 @@
         accessToken: 'pk.eyJ1Ijoia2FraW5udW8iLCJhIjoiY2s4cWZzNjEzMDJ2ZzNtazg0ZGN1Nm1ociJ9.AQOEuBUqoA53KG2T2FLw7w'
         }).addTo(mymap);
 
-        var marker = L.marker([51.5, -0.09]).addTo(mymap);
+        let marker = L.marker([51.5, -0.09]).addTo(mymap);
 
-        var circle = L.circle([51.508, -0.11], {
+        let circle = L.circle([51.508, -0.11], {
         color: 'red',
         fillColor: '#f03',
         fillOpacity: 0.5,
